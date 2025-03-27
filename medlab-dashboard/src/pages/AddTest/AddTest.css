@@ -1,0 +1,194 @@
+.add-test-page {
+  width: 100%;
+  font-size: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.add-test-page h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.add-test-page hr {
+  width: 100%;
+  border: none;
+  border-top: 4px solid #2ecc40;
+  margin: 0 0 20px 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #122023;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flex-container .form-group {
+  flex: 1;
+  min-width: 48%;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.category-tag {
+  background-color: #122023;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-between;
+  max-width: 300px;
+  height: 50px;
+  margin: 5px;
+}
+
+.category-tag .remove-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  padding: 0;
+  align-content: center;
+  justify-content: right;
+  font-size: 30px;
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 23px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-tag .remove-btn:hover {
+  color: red;
+  background: transparent;
+}
+
+.add-test-page button {
+  background-color: #2ecc40;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.add-test-page button:hover {
+  background-color: #122023;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; /* Stack the fields vertically on smaller screens */
+  }
+
+  .flex-container .form-group {
+    min-width: 100%; /* Full width on smaller screens */
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .category-tag {
+    font-size: 20px;
+    max-width: 230px;
+    height: 40px;
+  }
+
+  .category-tag .remove-btn {
+    font-size: 25px;
+  }
+  
+  .add-test-page button {
+    font-size: 1rem;
+    padding: 12px 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-group {
+    gap: 5px;
+  }
+  
+  .add-test-page h1 {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .category-tag {
+    font-size: 18px;
+    max-width: 200px;
+    height: 35px;
+  }
+
+  .category-tag .remove-btn {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .add-test-page button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    width: 100%;
+  }
+}

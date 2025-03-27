@@ -1,0 +1,59 @@
+.shard-grid-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .shard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  .custom-shard {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-shard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 34px #6af9ad;
+    transition: all 1s ease;
+  }
+  
+  .shard-image {
+    width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .shard-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #122023;
+  }
+  
+  .shard-description {
+    font-size: 16px;
+    color: #122023;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .shard-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  
+    .custom-shard {
+      margin-bottom: 20px;
+    }
+  }
+  

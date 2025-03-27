@@ -1,0 +1,88 @@
+/* Sidebar container */
+.sidebar {
+    width: 250px; /* Fixed width */
+    min-width: 250px; /* Ensures it doesn't shrink below this width */
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px; /* Adds space from the top (nav bar) */
+    margin-left: 20px; /* Adds space from the left */
+    border-radius: 8px; /* Rounded corners for a card-like appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    position: relative; /* Normal positioning, not sticky */
+    height: auto; /* Let the height adjust with content */
+    max-height: calc(100vh - 40px); /* Prevents overflow beyond the viewport */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+  }
+  
+  /* Sidebar content */
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #495057;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #e9ecef;
+    color: #212529;
+  }
+  
+  /* Sidebar icons */
+  .sidebar li a .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Collapsed sidebar (show only icons) */
+  .sidebar.collapsed {
+    width: 80px;
+    overflow: hidden;
+  }
+  
+  .sidebar.collapsed li a {
+    justify-content: center;
+  }
+  
+  .sidebar.collapsed li a .icon {
+    margin-right: 0;
+  }
+  
+  /* Sidebar toggle button */
+  .sidebar-toggle {
+    display: none; /* Hide toggle button if not required */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Hide the sidebar */
+    .sidebar {
+      display: none; /* Hide sidebar on small screens */
+    }
+  
+    /* Show sidebar toggle button */
+    .sidebar-toggle {
+      display: block; /* Show toggle button on smaller screens */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  

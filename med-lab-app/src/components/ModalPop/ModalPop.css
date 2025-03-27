@@ -1,0 +1,176 @@
+.custom-modal-overlay {
+  position: fixed; /* Ensure it covers the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+  backdrop-filter: blur(8px); /* Blurring effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  z-index: 1000; /* High z-index to render above other content */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+  overflow: hidden;
+}
+
+.custom-modal {
+  position: relative; /* Ensure it is positioned relative to the overlay */
+  background: #fff; /* White background for the modal */
+  border-radius: 2px; /* Rounded corners */
+  padding: 1.5rem; /* Add some padding inside the modal */
+  max-width: 657px; /* Set a max width */
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto; /* Make it responsive */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for popup effect */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #122023;
+  text-align: center;
+}
+
+.modal-form .modal-form-group {
+  margin-bottom: 1rem;
+}
+
+.modal-form .modal-form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #122023;
+}
+
+.modal-form .modal-form-input {
+  width: 99%;
+  padding: 0.8rem;
+  border: 1px solid #5f5f5f;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.modal-time-input {
+  display: flex;
+  width: 35.8%;
+  padding: 0.8rem;
+  margin-top: 5px;
+  border: 1px solid #5f5f5f;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.booking-confirmation {
+  text-align: center;
+  padding: 20px;
+}
+
+.booking-confirmation h2 {
+  color: #2ecc71;
+}
+
+.booking-confirmation p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.modal-form .modal-form-input:focus {
+  border-color: #00ff55;
+  outline: none;
+}
+
+.modal-form .modal-time-input:focus {
+  border-color: #00ff55;
+  outline: none;
+}
+
+.test-option option {
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.payment-option {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.form-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.form-actions button:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 2;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInBackground {
+  from {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-modal {
+    max-width: 90%; 
+    padding: 1rem; 
+  }
+
+  .modal-time-input {
+    display: flex;
+    width: 69.5%;
+    padding: 0.8rem;
+    margin-top: 5px;
+    border: 1px solid #5f5f5f;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+}

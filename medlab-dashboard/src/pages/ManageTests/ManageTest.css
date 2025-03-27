@@ -1,0 +1,110 @@
+.manage-test-page {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.manage-test-page h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.manage-test-page hr {
+  width: 100%;
+  border: none;
+  border-top: 4px solid #2ecc40;
+  margin: 0 0 20px 0;
+}
+
+.manage-test-page table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+.manage-test-page th,
+.manage-test-page td {
+  border: 1px solid #2ecc40;
+  text-align: center;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+.manage-test-page th {
+  background-color: #f2f2f2;
+}
+
+.manage-test-page td {
+  text-align: center;
+}
+
+.manage-test-page .edit-btn,
+.manage-test-page .delete-btn {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.manage-test-page .edit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.manage-test-page .delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .manage-test-page h1 {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .manage-test-page table {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .manage-test-page th,
+  .manage-test-page td {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .manage-test-page .edit-btn,
+  .manage-test-page .delete-btn {
+    padding: 4px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .manage-test-page h1 {
+    font-size: 30px;
+    margin-left: 5px;
+  }
+
+  .manage-test-page th,
+  .manage-test-page td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .manage-test-page .edit-btn,
+  .manage-test-page .delete-btn {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+}

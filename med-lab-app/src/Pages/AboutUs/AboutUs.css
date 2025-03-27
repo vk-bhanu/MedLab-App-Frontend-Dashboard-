@@ -1,0 +1,117 @@
+.about-us-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .about-header-left {
+    flex: 1;
+  }
+  
+  .about-header-left h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #122023;
+  }
+  
+  .about-header-right {
+    flex: 1;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .about-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%;
+  }
+  
+  .card h3 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #122023;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 19px;
+    color: #666666;
+  }
+
+  .our-journey {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .our-journey h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .our-journey p{
+    font-size: 40px;
+  }
+  
+  .coming-soon {
+    font-size: 20px;
+    color: #2ECC40;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .about-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-header-right {
+      margin-top: 20px;
+    }
+
+    .about-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .our-journey h1 {
+        font-size: 50px;
+      }
+
+      .our-journey p{
+        font-size: 30px;
+      }
+    
+      .coming-soon {
+        font-size: 18px;
+      }
+  }
+  
