@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors';
-import records from "./routes/records.js"
-import testRecords from "./routes/testRecords.js"
+import records from "../routes/records.js"
+import testRecords from "../routes/testRecords.js"
 import dotenv from 'dotenv';
 
 dotenv.config();
