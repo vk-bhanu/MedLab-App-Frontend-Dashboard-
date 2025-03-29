@@ -10,7 +10,7 @@ const ManageTest = () => {
 
   const fetchTests = async () => {
     try {
-      const response = await axios.get("//record");
+      const response = await axios.get("/record");
       setTests(response.data);
     } catch (error) {
       console.error("Error fetching tests", error);
@@ -22,12 +22,12 @@ const ManageTest = () => {
   }, []);
 
   const handleEdit = (id) => {
-    navigate(`//edit-test/${id}`); // Navigate to EditTest page with the test ID
+    navigate(`/edit-test/${id}`);
   };
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`//record/${id}`);
+      await axios.delete(`/record/${id}`);
       setTests(tests.filter((test) => test._id !== id));
       console.log("Test deleted successfully");
     } catch (error) {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"; // Import the CSS file
+import "./Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -8,7 +8,6 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  // Hardcoded valid users
   const validUsers = [
     {
         email: import.meta.env.VITE_ADMIN_EMAIL1,

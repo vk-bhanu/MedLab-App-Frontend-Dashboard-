@@ -128,17 +128,17 @@
 
 @media screen and (max-width: 768px) {
   .flex-container {
-    flex-direction: column; /* Stack the fields vertically on smaller screens */
+    flex-direction: column;
   }
 
   .flex-container .form-group {
-    min-width: 100%; /* Full width on smaller screens */
+    min-width: 100%;
   }
 
   .form-group input,
   .form-group textarea,
   .form-group select {
-    width: 100%; /* Ensure full width on smaller screens */
+    width: 100%;
   }
 
   .category-tag {
@@ -172,7 +172,7 @@
   .form-group input,
   .form-group textarea,
   .form-group select {
-    width: 100%; /* Full width on very small screens */
+    width: 100%; 
   }
 
   .category-tag {

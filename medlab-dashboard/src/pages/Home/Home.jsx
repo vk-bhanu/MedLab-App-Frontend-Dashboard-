@@ -9,14 +9,14 @@ const Home = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await fetch("https://medlab-app-backend-server.vercel.app//booktest");
+        const response = await fetch("https://medlab-app-backend-server.vercel.app/booktest");
         const data = await response.json();
 
         if (!Array.isArray(data)) {
           throw new Error("Invalid data format received from API");
         }
 
-        setTotalBookings(data.length); // ✅ Get total bookings
+        setTotalBookings(data.length);
       } catch (error) {
         console.error("Error fetching total bookings:", error);
       }

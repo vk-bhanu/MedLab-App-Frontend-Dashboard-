@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaUser, FaCog, FaMedkit, FaEdit } from "react-icons/fa";
+import { FaHome, FaMedkit, FaEdit } from "react-icons/fa";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);

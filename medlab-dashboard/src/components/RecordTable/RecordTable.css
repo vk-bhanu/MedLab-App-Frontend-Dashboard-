@@ -80,7 +80,6 @@
     color: white;
   }
   
-  /* Responsive Styles */
   @media screen and (max-width: 768px) {
     .record-table-title {
       font-size: 40px;

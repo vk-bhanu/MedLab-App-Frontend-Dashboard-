@@ -157,7 +157,7 @@ const EditTest = () => {
           </div>
 
         <div className="edit-flex-container">
-          {/* Duration */}
+      
           <div className="edit-form-group">
             <label htmlFor="duration">Test Duration (in minutes)</label>
             <input
@@ -171,7 +171,6 @@ const EditTest = () => {
             />
           </div>
 
-          {/* Category */}
           <div className="edit-form-group">
             <label htmlFor="category">Test Category</label>
             <input
