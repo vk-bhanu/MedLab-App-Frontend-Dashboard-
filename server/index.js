@@ -14,6 +14,10 @@ app.use(express.json());
 app.use("/record", records);
 app.use("/booktest", testRecords);
 
+app.get("/", (req,res)=>{
+    res.send("Hello")
+})
+
 app.listen(PORT, ()=>{
     console.log(`Server listening on port ${PORT}`);
 })
