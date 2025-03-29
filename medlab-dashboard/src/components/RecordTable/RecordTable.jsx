@@ -10,7 +10,7 @@ const RecordTable = () => {
   const fetchBookings = async () => {
     setLoading(true);
     try {
-      const response = await fetch("https://vercel.com/vk-bhanus-projects/med-lab-app-frontend-dashboard/7BWctgxqRRYoNLk2eyQXKYqnkbyi/booktest");
+      const response = await fetch("https://med-lab-app-frontend-dashboard.vercel.app/booktest");
       if (!response.ok) throw new Error("Failed to fetch bookings");
       const data = await response.json();
       setBookings(data);
@@ -27,7 +27,7 @@ const RecordTable = () => {
 
   const markAsDone = async (id) => {
     try {
-      const response = await fetch(`https://vercel.com/vk-bhanus-projects/med-lab-app-frontend-dashboard/7BWctgxqRRYoNLk2eyQXKYqnkbyi/booktest/${id}`, {
+      const response = await fetch(`https://med-lab-app-frontend-dashboard.vercel.app/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: "Done" }),
@@ -47,7 +47,7 @@ const RecordTable = () => {
 
   const deleteBooking = async (id) => {
     try {
-      const response = await fetch(`https://vercel.com/vk-bhanus-projects/med-lab-app-frontend-dashboard/7BWctgxqRRYoNLk2eyQXKYqnkbyi/booktest/${id}`, {
+      const response = await fetch(`https://med-lab-app-frontend-dashboard.vercel.app/booktest/${id}`, {
         method: "DELETE",
       });
 

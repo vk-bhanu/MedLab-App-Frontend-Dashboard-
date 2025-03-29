@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://vercel.com/vk-bhanus-projects/med-lab-app-frontend-dashboard/7BWctgxqRRYoNLk2eyQXKYqnkbyi',
+  baseURL: 'https://med-lab-app-frontend-dashboard.vercel.app',
 });
 
 export default instance;

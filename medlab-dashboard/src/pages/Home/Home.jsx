@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await fetch("https://vercel.com/vk-bhanus-projects/med-lab-app-frontend-dashboard/7BWctgxqRRYoNLk2eyQXKYqnkbyi/booktest");
+        const response = await fetch("https://med-lab-app-frontend-dashboard.vercel.app/booktest");
         const data = await response.json();
 
         if (!Array.isArray(data)) {
