@@ -9,11 +9,7 @@ dotenv.config();
 const PORT = process.env.PORT;
 const app = express();
 
-app.use(cors({
-    origin: ["http://localhost:5173", "https://med-lab-app-frontend-dashboard.vercel.app"],  
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
-}));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use("/record", records);
 app.use("/booktest", testRecords);

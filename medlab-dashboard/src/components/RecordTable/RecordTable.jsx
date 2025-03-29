@@ -47,7 +47,7 @@ const RecordTable = () => {
 
   const deleteBooking = async (id) => {
     try {
-      const response = await fetch(`https://med-lab-app-frontend-dashboard.vercel.app/booktest/${id}`, {
+      const response = await fetch(`https://medlab-app-backend-server-git-main-vk-bhanus-projects.vercel.app/booktest/${id}`, {
         method: "DELETE",
       });
 
