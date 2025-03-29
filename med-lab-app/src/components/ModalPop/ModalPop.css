@@ -1,29 +1,29 @@
 .custom-modal-overlay {
-  position: fixed; /* Ensure it covers the viewport */
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
-  backdrop-filter: blur(8px); /* Blurring effect */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
-  z-index: 1000; /* High z-index to render above other content */
+  background: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  z-index: 1000; 
   display: flex;
-  align-items: center; /* Center vertically */
+  align-items: center; 
   justify-content: center;
   overflow: hidden;
 }
 
 .custom-modal {
-  position: relative; /* Ensure it is positioned relative to the overlay */
-  background: #fff; /* White background for the modal */
-  border-radius: 2px; /* Rounded corners */
-  padding: 1.5rem; /* Add some padding inside the modal */
-  max-width: 657px; /* Set a max width */
+  position: relative; 
+  background: #fff; 
+  border-radius: 2px; 
+  padding: 1.5rem; 
+  max-width: 657px;
   width: 100%;
   max-height: 90vh;
-  overflow-y: auto; /* Make it responsive */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for popup effect */
+  overflow-y: auto; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
   animation: fadeIn 0.3s ease-in-out;
 }
 

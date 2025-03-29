@@ -49,8 +49,7 @@
   .clear-icon:hover {
     color: #ff4d4d;
   }
-  
-  /* Responsive */
+ 
   @media (max-width: 600px) {
     .search-container {
       flex-direction: row;
