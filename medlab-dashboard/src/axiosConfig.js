@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://medlab-app-backend-server-git-main-vk-bhanus-projects.vercel.app/',
+  baseURL: 'https://medlab-app-backend-server.vercel.app/',
 });
 
 export default instance;
