@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaTimes } from "react-icons/fa"; // Import FA cross icon
+import { FaTimes } from "react-icons/fa"; 
 import "./Search.css"
 
 const Search = ({ onSearch }) => {
@@ -12,7 +12,7 @@ const Search = ({ onSearch }) => {
 
   const clearSearch = () => {
     setSearchTerm("");
-    onSearch(""); // Reset to show all tests
+    onSearch(""); 
   };
 
   return (

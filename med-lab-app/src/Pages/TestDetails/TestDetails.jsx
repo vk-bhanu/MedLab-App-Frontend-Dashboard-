@@ -12,7 +12,7 @@ const TestDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5050/record/${id}`)
+      .get(`https://medlab-app-backend-server.vercel.app/record/${id}`)
       .then((response) => {
         setTest(response.data);
         setLoading(false);

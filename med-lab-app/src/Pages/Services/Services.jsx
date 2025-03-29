@@ -12,7 +12,7 @@ const Services = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5050/record?name=${searchQuery}`)
+      .get(`https://medlab-app-backend-server.vercel.app/record?name=${searchQuery}`)
       .then((response) => {
         setTests(response.data);
         setLoading(false);

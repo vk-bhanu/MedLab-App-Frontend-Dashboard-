@@ -24,7 +24,7 @@ const ModalPop = ({ isOpen, onClose, preselectedTests, testPrice }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5050/record")
+      .get("https://medlab-app-backend-server.vercel.app/record")
       .then((response) => {
         setTests(response.data);
         setLoading(false);
@@ -49,7 +49,7 @@ const ModalPop = ({ isOpen, onClose, preselectedTests, testPrice }) => {
 
   const handleSubmit = () => {
     axios
-      .post("http://localhost:5050/booktest", formData)
+      .post("https://medlab-app-backend-server.vercel.app/booktest", formData)
       .then((response) => {
         console.log("Booking successful:", response.data);
         setBookingConfirmed(true);
