@@ -27,7 +27,7 @@ const BookingChart = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await fetch("http://localhost:5050/booktest");
+        const response = await fetch("https://vercel.com/vk-bhanus-projects/med-lab-app-frontend-dashboard/7BWctgxqRRYoNLk2eyQXKYqnkbyi/booktest");
         const data = await response.json();
 
         if (!Array.isArray(data)) {
