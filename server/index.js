@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 app.use(cors({
-    origin: ["https://med-lab-app-frontend-dashboard.vercel.app/"],  
+    origin: ["https://med-lab-app-frontend-dashboard.vercel.app"],  
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
